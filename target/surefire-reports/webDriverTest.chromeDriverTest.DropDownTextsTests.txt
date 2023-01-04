@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: webDriverTest.chromeDriverTest.DropDownTextsTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 98.508 s <<< FAILURE! - in webDriverTest.chromeDriverTest.DropDownTextsTests
+fourthDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 12.289 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Только начиная с завтрашнего дня. Но скоро станем расторопнее.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.fourthDropDownTextCheck(DropDownTextsTests.java:56)
+
+secondDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 15.673 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.secondDropDownTextCheck(DropDownTextsTests.java:36)
+
+fifthDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 16.198 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.fifthDropDownTextCheck(DropDownTextsTests.java:66)
+
+sixthDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 9.212 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.sixthDropDownTextCheck(DropDownTextsTests.java:76)
+
+firstDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 12.567 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.firstDropDownTextCheck(DropDownTextsTests.java:26)
+
+thirdDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 13.139 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.thirdDropDownTextCheck(DropDownTextsTests.java:46)
+
+eighthDropDownTextCheck(webDriverTest.chromeDriverTest.DropDownTextsTests)  Time elapsed: 6.944 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[Да, обязательно. Всем самокатов! И Москве, и Московской области.]> but was:<[]>
+	at webDriverTest.chromeDriverTest.DropDownTextsTests.eighthDropDownTextCheck(DropDownTextsTests.java:96)
+

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4ad2320-efa5-468d-ad40-8429b3bdab5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fourthSprintProject" beforeDir="false" afterPath="$PROJECT_DIR$/../fourthSprintProject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shakespeare/hamlet.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test_subject2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Я изучаю Git. Он нужен, чтобы сохранять свой прогресс во время разработки" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2JfpY6Uuho0hSdH7TDm99D5fCxl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/Users/artembragin/yandex/Sprint_4",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Sprint_4 [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Maven.Sprint_4 [test]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4ad2320-efa5-468d-ad40-8429b3bdab5f" name="Changes" comment="" />
+      <created>1672479037972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672479037972</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

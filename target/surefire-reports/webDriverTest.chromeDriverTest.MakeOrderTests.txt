@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: webDriverTest.chromeDriverTest.MakeOrderTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 78.558 s <<< FAILURE! - in webDriverTest.chromeDriverTest.MakeOrderTests
+makeOrderTestPositiveLowerButton(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 13.152 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string starting with "Заказ оформлен"
+     but: was "Хотите оформить заказ?
+ "
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveLowerButton(MakeOrderTests.java:32)
+
+makeOrderTestPositiveUpperButton(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 7.945 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: a string starting with "Заказ оформлен"
+     but: was "Хотите оформить заказ?
+ "
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveUpperButton(MakeOrderTests.java:21)
+
