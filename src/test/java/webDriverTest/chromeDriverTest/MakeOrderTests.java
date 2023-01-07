@@ -1,56 +1,116 @@
 package webDriverTest.chromeDriverTest;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.After;
 import org.junit.Test;
-import ru.yandex.praktikum.Main;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.yandex.praktikum.OrderForPage;
-import samokatTests.TestBase;
+
+import java.util.concurrent.TimeUnit;
 
 import static ru.yandex.praktikum.Main.*;
+import static ru.yandex.praktikum.Main.fillOrderPageFields;
+
 
 //Тесты оформления заказа в браузере Chrome
-public class MakeOrderTests extends TestBase {
+
+public class MakeOrderTests {
+
+    public void setUpChrome() {
+        WebDriverManager.chromedriver().setup();
+        webDriver = new ChromeDriver();
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+    public void setUpMozilla() {
+        System.setProperty("webdriver.gecko.driver", "/Users/artembragin/Documents/geckodriver");
+        webDriver = new FirefoxDriver();
+        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
+
+    @After
+    public void tearDown() {
+        webDriver.quit();
+    }
+
 
     @Test
-    public void makeOrderTestPositiveUpperButton() {
-        Main mainPage = new Main(webDriver);
-
-        openSamokat();
-        clickMakeOrderUpperButton();
-        fillOrderPageFields(OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
-        fillRentAboutPage("Привезите утром или в обед", "29.02.2023");
-        orderMadeCheck();
+    public void makeOrderTestPositiveUpperButtonChrome() {
+        setUpChrome();
+        openSamokat(webDriver);
+        clickMakeOrderUpperButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
+        fillRentAboutPage(webDriver,"Привезите утром или в обед", "29.02.2023");
+        orderMadeCheck(webDriver);
     }
 
     @Test
-    public void makeOrderTestPositiveLowerButton() {
-        Main mainPage = new Main(webDriver);
+    public void makeOrderTestPositiveLowerButtonChrome() {
 
-        openSamokat();
-        clickMakeOrderLowerButton();
-        fillOrderPageFields(OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
-        fillRentAboutPage("Привезите утром или в обед", "29.02.2023");
-        orderMadeCheck();
+        setUpChrome();
+        openSamokat(webDriver);
+        clickMakeOrderLowerButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
+        fillRentAboutPage(webDriver,"Привезите утром или в обед", "29.02.2023");
+        orderMadeCheck(webDriver);
     }
 
     @Test
-    public void makeOrderTestNegativeUpperButton() {
-        Main mainPage = new Main(webDriver);
-
-        openSamokat();
-        clickMakeOrderUpperButton();
-        fillOrderPageFields(OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
-        fillRentAboutPageNegative("Привезите утром или в обед", "29.02.2023");
-        orderNotMadeCheck();
+    public void makeOrderTestNegativeUpperButtonChrome() {
+        setUpChrome();
+        openSamokat(webDriver);
+        clickMakeOrderUpperButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
+        fillRentAboutPageNegative(webDriver);
     }
 
     @Test
-    public void makeOrderTestNegativeLowerButton() {
-        Main mainPage = new Main(webDriver);
+    public void makeOrderTestNegativeLowerButtonChrome() {
+        setUpChrome();
+        openSamokat(webDriver);
+        clickMakeOrderLowerButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
+        fillRentAboutPageNegative(webDriver);
+    }
 
-        openSamokat();
-        clickMakeOrderLowerButton();
-        fillOrderPageFields(OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
-        fillRentAboutPageNegative("Привезите вечером", "00.02.2023");
-        orderNotMadeCheck();
+    //Тесты оформления заказа в браузере Mozilla
+    @Test
+    public void makeOrderTestPositiveUpperButtonMozilla() {
+
+        setUpMozilla();
+        openSamokat(webDriver);
+        clickMakeOrderUpperButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
+        fillRentAboutPage(webDriver,"Привезите утром или в обед", "29.02.2023");
+        orderMadeCheck(webDriver);
+    }
+
+    @Test
+    public void makeOrderTestPositiveLowerButtonMozilla() {
+
+        setUpMozilla();
+        openSamokat(webDriver);
+        clickMakeOrderLowerButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.namePetya, OrderForPage.surnamePetya, "Рябиновая 57", "79563327766");
+        fillRentAboutPage(webDriver,"Привезите утром или в обед", "29.02.2023");
+        orderMadeCheck(webDriver);
+    }
+
+    @Test
+    public void makeOrderTestNegativeUpperButtonMozilla() {
+        setUpMozilla();
+        openSamokat(webDriver);
+        clickMakeOrderUpperButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
+        fillRentAboutPageNegative(webDriver);
+    }
+
+    @Test
+    public void makeOrderTestNegativeLowerButtonMozilla() {
+        setUpMozilla();
+        openSamokat(webDriver);
+        clickMakeOrderLowerButton(webDriver);
+        fillOrderPageFields(webDriver, OrderForPage.nameVasya, OrderForPage.surnameVasya, "Рябиновая 57", "79563327766");
+        fillRentAboutPageNegative(webDriver);
     }
 }

@@ -1,4 +1,4 @@
-package webDriverTest.mozillaDriverTest;
+/*package webDriverTest.mozillaDriverTest;
 
 import org.junit.After;
 import org.junit.Before;
@@ -21,25 +21,25 @@ import static ru.yandex.praktikum.Main.openSamokat;
 
 //Тесты текстов кнопок "Вопросы о важном" в браузер  Mozilla
 public class DropDownTextsTests {
-    WebDriver webDriver;
+    WebDriver firefoxDriver;
 
     @Before
     public void setUp() {
         System.setProperty("webdriver.gecko.driver", "/Users/artembragin/Documents/geckodriver");
-        webDriver = new FirefoxDriver();
-        webDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        firefoxDriver = new FirefoxDriver();
+        firefoxDriver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
     }
 
     @After
     public void tearDown() {
-        webDriver.quit();
+        firefoxDriver.quit();
     }
 
 
     @Test
     public void firstDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownFirstButtonClick();
@@ -49,7 +49,7 @@ public class DropDownTextsTests {
 
     @Test
     public void secondDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownSecondButtonClick();
@@ -59,7 +59,7 @@ public class DropDownTextsTests {
 
     @Test
     public void thirdDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownThirdButtonClick();
@@ -69,7 +69,7 @@ public class DropDownTextsTests {
 
     @Test
     public void fourthDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownFourthButtonClick();
@@ -79,7 +79,7 @@ public class DropDownTextsTests {
 
     @Test
     public void fifthDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownFifthButtonClick();
@@ -89,7 +89,7 @@ public class DropDownTextsTests {
 
     @Test
     public void sixthDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownSixthButtonClick();
@@ -99,7 +99,7 @@ public class DropDownTextsTests {
 
     @Test
     public void seventhDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownSeventhButtonClick();
@@ -109,11 +109,11 @@ public class DropDownTextsTests {
 
     @Test
     public void eighthDropDownTextCheck() {
-        Main mainPage = new Main(webDriver);
+        Main mainPage = new Main(firefoxDriver);
 
         openSamokat();
         dropDownEighthButtonClick();
         eighthActualTextGetting();
         assertEqualEighth();
     }
-}
+}*/

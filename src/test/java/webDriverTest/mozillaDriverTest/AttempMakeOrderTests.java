@@ -1,4 +1,4 @@
-package webDriverTest.mozillaDriverTest;
+/*package webDriverTest.mozillaDriverTest;
 
 import org.junit.After;
 import org.junit.Before;
@@ -73,4 +73,4 @@ public class MakeOrderTests {
         fillRentAboutPageNegative("Привезите утром или в обед", "29.02.2023");
         orderNotMadeCheck();
     }
-}
+}*/

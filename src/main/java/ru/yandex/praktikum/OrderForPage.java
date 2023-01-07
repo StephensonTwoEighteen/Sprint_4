@@ -24,11 +24,11 @@ public class OrderForPage {
     protected static By metroStationField = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(4) > div > div > input");
 
     //Пункт выпадающего списка "Сокольники"
-    protected static By sokolnikiStationButton = By.xpath("//*[@id=\"root\"]/div/div[2]/div[2]/div[4]/div/div[2]/ul/li[4]");
+    protected static By sokolnikiStationButton = By.xpath(".//button[@value='3']");
 
     //Поле "Телефон: на него позвонит курьер"
     protected static By phoneNumberField = By.cssSelector("#root > div > div.Order_Content__bmtHS > div.Order_Form__17u6u > div:nth-child(5) > input");
 
     //Кнопка "Далее"
-    protected static By goAheadButton = By.xpath("//*[@id=\"root\"]/div/div[2]/div[3]/button");
+    protected static By goAheadButton = By.xpath(".//button[@class='Button_Button__ra12g Button_Middle__1CSJM']");
 }
