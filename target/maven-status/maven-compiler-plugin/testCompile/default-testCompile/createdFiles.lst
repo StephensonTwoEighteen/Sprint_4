@@ -1,5 +1,1 @@
-samokatTests/TestBase.class
-webDriverTest/mozillaDriverTest/DropDownTextsTests.class
-webDriverTest/chromeDriverTest/MakeOrderTests.class
 webDriverTest/chromeDriverTest/DropDownTextsTests.class
-webDriverTest/mozillaDriverTest/MakeOrderTests.class

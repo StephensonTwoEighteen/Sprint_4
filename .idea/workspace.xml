@@ -5,14 +5,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4ad2320-efa5-468d-ad40-8429b3bdab5f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../fourthSprintProject" beforeDir="false" afterPath="$PROJECT_DIR$/../fourthSprintProject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../shakespeare/hamlet.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test_subject2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Я изучаю Git. Он нужен, чтобы сохранять свой прогресс во время разработки" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/chromeDriverTest/DropDownTextsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/DropDownTextsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/chromeDriverTest/MakeOrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/MakeOrderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/chromeDriverTest/ParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/ParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/mozillaDriverTest/AttempDropDownTextsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/mozillaDriverTest/AttempMakeOrderTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$EighthText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$FifthText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$FirstText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$FourthText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$SecondText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$SeventhText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$SixthText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main$ThirdText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/MainPageElements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/OrderForPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/OrderForPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/RentAboutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/RentAboutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-webDriverTest.chromeDriverTest.DropDownTextsTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-webDriverTest.chromeDriverTest.DropDownTextsTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-webDriverTest.chromeDriverTest.MakeOrderTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-webDriverTest.chromeDriverTest.MakeOrderTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/webDriverTest.chromeDriverTest.DropDownTextsTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/webDriverTest.chromeDriverTest.DropDownTextsTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/webDriverTest.chromeDriverTest.MakeOrderTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/webDriverTest.chromeDriverTest.MakeOrderTests.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DropDownTextsTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MakeOrderTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/samokatTests/TestBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/webDriverTest/chromeDriverTest/DropDownTextsTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/webDriverTest/chromeDriverTest/DropDownTextsTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/webDriverTest/chromeDriverTest/MakeOrderTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/webDriverTest/chromeDriverTest/MakeOrderTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/webDriverTest/mozillaDriverTest/DropDownTextsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/webDriverTest/mozillaDriverTest/MakeOrderTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +52,18 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -54,8 +86,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "/Users/artembragin/yandex/Sprint_4",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner"
   }
 }]]></component>
@@ -69,8 +101,85 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Sprint_4 [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+  <component name="RunManager" selected="JUnit.DropDownTextsTests.fourthDropTextCheckMozilla">
+    <configuration name="DropDownTextsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.chromeDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest.chromeDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.chromeDriverTest.DropDownTextsTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DropDownTextsTests.fourthDropTextCheckMozilla" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.chromeDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest.chromeDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.chromeDriverTest.DropDownTextsTests" />
+      <option name="METHOD_NAME" value="fourthDropTextCheckMozilla" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MakeOrderTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.chromeDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest.chromeDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.chromeDriverTest.MakeOrderTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.chromeDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest.chromeDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.chromeDriverTest.ParamsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamsTest.makeOrderParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.chromeDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest.chromeDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.chromeDriverTest.ParamsTest" />
+      <option name="METHOD_NAME" value="makeOrderParamsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sprint_4" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -80,11 +189,9 @@
               <set />
             </option>
             <option name="goals">
-              <list>
-                <option value="test" />
-              </list>
+              <list />
             </option>
-            <option name="pomFileName" value="pom.xml" />
+            <option name="pomFileName" />
             <option name="profilesMap">
               <map />
             </option>
@@ -95,9 +202,21 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JUnit.DropDownTextsTests" />
+      <item itemvalue="JUnit.DropDownTextsTests.fourthDropTextCheckMozilla" />
+      <item itemvalue="JUnit.ParamsTest" />
+      <item itemvalue="JUnit.ParamsTest.makeOrderParamsTest" />
+      <item itemvalue="JUnit.MakeOrderTests" />
+      <item itemvalue="Maven.Sprint_4" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.Sprint_4 [test]" />
+        <item itemvalue="JUnit.DropDownTextsTests.fourthDropTextCheckMozilla" />
+        <item itemvalue="JUnit.DropDownTextsTests" />
+        <item itemvalue="JUnit.ParamsTest" />
+        <item itemvalue="JUnit.MakeOrderTests" />
+        <item itemvalue="JUnit.ParamsTest.makeOrderParamsTest" />
       </list>
     </recent_temporary>
   </component>

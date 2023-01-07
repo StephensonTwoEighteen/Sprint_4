@@ -1,4 +1,4 @@
-package webDriverTest.chromeDriverTest;
+package webDriverTest;
 
 import org.junit.After;
 import org.junit.Test;

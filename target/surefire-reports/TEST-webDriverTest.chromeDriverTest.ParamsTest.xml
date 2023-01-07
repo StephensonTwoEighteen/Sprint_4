@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.chromeDriverTest.DropDownTextsTests" time="127.146" tests="16" errors="0" skipped="0" failures="7">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.chromeDriverTest.ParamsTest" time="85.021" tests="6" errors="2" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -53,39 +53,20 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="thirdDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="6.315"/>
-  <testcase name="fifthDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="7.245">
-    <failure message="expected:&lt;[Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Пока что нет! Но если что-то срочное — всегда можно позвонить в поддержку по красивому номеру 1010.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.fifthDropDownTextCheckChrome(DropDownTextsTests.java:71)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 26348
+  <testcase name="makeOrderParamsTestMozilla[0]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="14.726"/>
+  <testcase name="makeOrderParamsTestChrome[0]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="12.272">
+    <failure message="&#10;Expected: a string starting with &quot;Заказ оформлен&quot;&#10;     but: was &quot;Хотите оформить заказ?&#10; &quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
+
+Expected: a string starting with "Заказ оформлен"
+     but: was "Хотите оформить заказ?
+ "
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:65)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 32553
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="firstDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="8.329"/>
-  <testcase name="secondDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="10.236"/>
-  <testcase name="fourthDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="9.73"/>
-  <testcase name="secondDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="7.109">
-    <failure message="expected:&lt;[Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Пока что у нас так: один заказ — один самокат. Если хотите покататься с друзьями, можете просто сделать несколько заказов — один за другим.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.secondDropDownTextCheckChrome(DropDownTextsTests.java:47)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 48240
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="sixthDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="5.344">
-    <failure message="expected:&lt;[Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.sixthDropDownTextCheckChrome(DropDownTextsTests.java:79)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 28791
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 07, 2023 4:01:29 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+янв. 07, 2023 3:59:36 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -105,15 +86,166 @@ java.net.SocketException: Connection reset
 
 ]]></system-err>
   </testcase>
-  <testcase name="firstDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="11.169">
-    <failure message="expected:&lt;[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Сутки — 400 рублей. Оплата курьеру — наличными или картой.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.firstDropDownTextCheckChrome(DropDownTextsTests.java:39)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 11163
+  <testcase name="makeOrderParamsTestMozilla[1]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="19.551">
+    <error message="Unable to locate element: .Dropdown-root&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [596af137-745b-4f59-afe5-12676adee30d, findElement {using=css selector, value=.Dropdown-root}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:3882, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6333, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:3882/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 596af137-745b-4f59-afe5-12676adee30d" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .Dropdown-root
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [596af137-745b-4f59-afe5-12676adee30d, findElement {using=css selector, value=.Dropdown-root}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:3882, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6333, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:3882/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 596af137-745b-4f59-afe5-12676adee30d
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:54)
+</error>
+    <system-err><![CDATA[1673092777035	geckodriver	INFO	Listening on 127.0.0.1:10378
+1673092777094	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "3882" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:3882/,http://localhost:3882/,http://[::1]:3882/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofilet6a3wL"
+1673092777673	Marionette	INFO	Marionette enabled
+1673092777704	Marionette	INFO	Listening on port 51202
+Read port: 51202
+WebDriver BiDi listening on ws://127.0.0.1:3882
+1673092778083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofilet6a3wL/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:3882/devtools/browser/7e8490cf-c3f6-4e30-bf11-c428441fff25
+1673092786456	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1673092796011	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:51237
+1673092796013	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1673092796016	Marionette	INFO	Stopped listening on port 51202
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1687:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:369:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:242:17
+Barrier/addBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:751:20
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:560:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+]]></system-err>
+  </testcase>
+  <testcase name="makeOrderParamsTestChrome[1]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="17.144">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.Dropdown-root&quot;}&#10;  (Session info: chrome=108.0.5359.124)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [46ce79a81a5306fb4dfe21d474e37609, findElement {using=css selector, value=.Dropdown-root}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/h6/2b6l25ms30q...}, goog:chromeOptions: {debuggerAddress: localhost:51240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51240/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 46ce79a81a5306fb4dfe21d474e37609" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".Dropdown-root"}
+  (Session info: chrome=108.0.5359.124)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [46ce79a81a5306fb4dfe21d474e37609, findElement {using=css selector, value=.Dropdown-root}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.124, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: /var/folders/h6/2b6l25ms30q...}, goog:chromeOptions: {debuggerAddress: localhost:51240}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:51240/devtoo..., se:cdpVersion: 108.0.5359.124, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 46ce79a81a5306fb4dfe21d474e37609
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:64)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 17106
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-янв. 07, 2023 4:01:40 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+янв. 07, 2023 4:00:13 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
@@ -133,58 +265,20 @@ java.net.SocketException: Connection reset
 
 ]]></system-err>
   </testcase>
-  <testcase name="thirdDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="8.975"/>
-  <testcase name="eighthDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="8.453"/>
-  <testcase name="sixthDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="8.374"/>
-  <testcase name="fifthDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="7.628"/>
-  <testcase name="seventhDropTextCheckMozilla" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="8.158"/>
-  <testcase name="eighthDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="6.056">
-    <failure message="expected:&lt;[Да, обязательно. Всем самокатов! И Москве, и Московской области.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Да, обязательно. Всем самокатов! И Москве, и Московской области.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.eighthDropDownTextCheckChrome(DropDownTextsTests.java:95)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 22562
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="fourthDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="6.962">
-    <failure message="expected:&lt;[Только начиная с завтрашнего дня. Но скоро станем расторопнее.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Только начиная с завтрашнего дня. Но скоро станем расторопнее.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.fourthDropDownTextCheckChrome(DropDownTextsTests.java:63)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 28037
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 07, 2023 4:02:35 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
+  <testcase name="makeOrderParamsTestMozilla[2]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="12.1"/>
+  <testcase name="makeOrderParamsTestChrome[2]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="9.182">
+    <failure message="&#10;Expected: a string starting with &quot;Заказ оформлен&quot;&#10;     but: was &quot;Хотите оформить заказ?&#10; &quot;" type="java.lang.AssertionError">java.lang.AssertionError: 
 
-]]></system-err>
-  </testcase>
-  <testcase name="seventhDropDownTextCheckChrome" classname="webDriverTest.chromeDriverTest.DropDownTextsTests" time="7.059">
-    <failure message="expected:&lt;[Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<[Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои.]> but was:<[]>
-	at webDriverTest.chromeDriverTest.DropDownTextsTests.seventhDropDownTextCheckChrome(DropDownTextsTests.java:87)
-]]></failure>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 18404
+Expected: a string starting with "Заказ оформлен"
+     but: was "Хотите оформить заказ?
+ "
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:65)
+</failure>
+    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 27032
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-янв. 07, 2023 4:02:42 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
+янв. 07, 2023 4:00:34 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
 WARNING: Connection reset
 java.net.SocketException: Connection reset
 	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
