@@ -1,7 +1,8 @@
-*.idea
-*.git
+#someFolders
+.idea
+.git
 
-Sprint_4.iml
+*.iml
 
 # Compiled class file
 *.class
