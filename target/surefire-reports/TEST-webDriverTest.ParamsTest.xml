@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.chromeDriverTest.MakeOrderTests" time="46.852" tests="8" errors="8" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.ParamsTest" time="76.095" tests="6" errors="2" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -53,22 +53,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="makeOrderTestNegativeLowerButtonMozilla" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="6.45">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeLowerButtonMozilla(MakeOrderTests.java:113)
+  <testcase name="makeOrderUpperButtonParamsTest[0]" classname="webDriverTest.ParamsTest" time="11.278"/>
+  <testcase name="makeOrderLowerButtonParamsTest[0]" classname="webDriverTest.ParamsTest" time="12.009"/>
+  <testcase name="makeOrderUpperButtonParamsTest[1]" classname="webDriverTest.ParamsTest" time="17.019">
+    <error message="Unable to locate element: .//div[contains (text(), &quot;Срок аренды&quot;)]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [d507940e-4008-4a10-80a0-40040931b36c, findElement {using=xpath, value=.//div[contains (text(), &quot;Срок аренды&quot;)]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:21830, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6223, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:21830/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d507940e-4008-4a10-80a0-40040931b36c" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .//div[contains (text(), "Срок аренды")]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d507940e-4008-4a10-80a0-40040931b36c, findElement {using=xpath, value=.//div[contains (text(), "Срок аренды")]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:21830, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6223, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:21830/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d507940e-4008-4a10-80a0-40040931b36c
+	at webDriverTest.ParamsTest.makeOrderUpperButtonParamsTest(ParamsTest.java:50)
 </error>
-    <system-err><![CDATA[1673211116893	geckodriver	INFO	Listening on 127.0.0.1:30175
-1673211116932	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "3548" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:3548/,http://localhost:3548/,http://[::1]:3548/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileLHVbCI"
-1673211117399	Marionette	INFO	Marionette enabled
-1673211117432	Marionette	INFO	Listening on port 51347
-Read port: 51347
-WebDriver BiDi listening on ws://127.0.0.1:3548
-1673211117782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileLHVbCI/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:3548/devtools/browser/c9d3698f-3783-4621-a0ac-878cce08637d
-1673211122883	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:51392
-1673211122886	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1673211122888	Marionette	INFO	Stopped listening on port 51347
+    <system-err><![CDATA[1673211010121	geckodriver	INFO	Listening on 127.0.0.1:27850
+1673211010175	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "21830" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:21830/,http://localhost:21830/,http://[::1]:21830/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileKqgKNt"
+1673211010637	Marionette	INFO	Marionette enabled
+1673211010671	Marionette	INFO	Listening on port 50637
+Read port: 50637
+WebDriver BiDi listening on ws://127.0.0.1:21830
+1673211010999	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileKqgKNt/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:21830/devtools/browser/21d2d6cd-dca7-40b0-91fe-99811ddf1c98
+1673211017181	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1673211026652	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50733
+1673211026654	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1673211026658	Marionette	INFO	Stopped listening on port 50637
 WARNING: A blocker encountered an error while we were waiting.
           Blocker:  Waiting for ping task
           Phase: TelemetryController: Waiting for pending ping activity
@@ -182,22 +197,35 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 ]]></system-err>
   </testcase>
-  <testcase name="makeOrderTestNegativeUpperButtonMozilla" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="5.187">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeUpperButtonMozilla(MakeOrderTests.java:104)
+  <testcase name="makeOrderLowerButtonParamsTest[1]" classname="webDriverTest.ParamsTest" time="16.388">
+    <error message="Unable to locate element: .//div[contains (text(), &quot;Срок аренды&quot;)]&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.7.1&apos;, revision: &apos;c6795baf1a3&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;11.6&apos;, java.version: &apos;18.0.1.1&apos;&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Command: [442e194d-401d-4e23-827a-f7027a7ae189, findElement {using=xpath, value=.//div[contains (text(), &quot;Срок аренды&quot;)]}]&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:18002, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6248, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:18002/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 442e194d-401d-4e23-827a-f7027a7ae189" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .//div[contains (text(), "Срок аренды")]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [442e194d-401d-4e23-827a-f7027a7ae189, findElement {using=xpath, value=.//div[contains (text(), "Срок аренды")]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:18002, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6248, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:18002/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 442e194d-401d-4e23-827a-f7027a7ae189
+	at webDriverTest.ParamsTest.makeOrderLowerButtonParamsTest(ParamsTest.java:59)
 </error>
-    <system-err><![CDATA[1673211123345	geckodriver	INFO	Listening on 127.0.0.1:8349
-1673211123392	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "8135" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:8135/,http://localhost:8135/,http://[::1]:8135/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileHlVA9j"
-1673211123878	Marionette	INFO	Marionette enabled
-1673211123911	Marionette	INFO	Listening on port 51400
-Read port: 51400
-WebDriver BiDi listening on ws://127.0.0.1:8135
-1673211124244	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileHlVA9j/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:8135/devtools/browser/21370b82-b324-40b2-964e-ae35da6b14d9
-1673211128068	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:51442
-1673211128070	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1673211128073	Marionette	INFO	Stopped listening on port 51400
+    <system-err><![CDATA[1673211027142	geckodriver	INFO	Listening on 127.0.0.1:25161
+1673211027192	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "18002" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:18002/,http://localhost:18002/,http://[::1]:18002/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileJIj2VP"
+1673211027674	Marionette	INFO	Marionette enabled
+1673211027707	Marionette	INFO	Listening on port 50740
+Read port: 50740
+WebDriver BiDi listening on ws://127.0.0.1:18002
+1673211028050	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileJIj2VP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:18002/devtools/browser/ea21f088-99a3-46d7-8aae-fd620f4623f4
+1673211033587	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1673211043054	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:50837
+1673211043057	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
+1673211043061	Marionette	INFO	Stopped listening on port 50740
 WARNING: A blocker encountered an error while we were waiting.
           Blocker:  Waiting for ping task
           Phase: TelemetryController: Waiting for pending ping activity
@@ -311,356 +339,6 @@ JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Pha
 JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
 ]]></system-err>
   </testcase>
-  <testcase name="makeOrderTestNegativeUpperButtonChrome" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="4.966">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeUpperButtonChrome(MakeOrderTests.java:63)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 27249
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 08, 2023 11:52:13 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-]]></system-err>
-  </testcase>
-  <testcase name="makeOrderTestPositiveLowerButtonMozilla" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="6.441">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveLowerButtonMozilla(MakeOrderTests.java:94)
-</error>
-    <system-err><![CDATA[1673211133498	geckodriver	INFO	Listening on 127.0.0.1:36595
-1673211133549	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "16998" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:16998/,http://localhost:16998/,http://[::1]:16998/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofilemiEU3e"
-1673211134032	Marionette	INFO	Marionette enabled
-1673211134065	Marionette	INFO	Listening on port 51490
-Read port: 51490
-WebDriver BiDi listening on ws://127.0.0.1:16998
-1673211134408	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofilemiEU3e/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:16998/devtools/browser/49b8cab9-627b-450d-ba8b-8f833e58110b
-1673211139476	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:51539
-1673211139478	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1673211139480	Marionette	INFO	Stopped listening on port 51490
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-sendPing@resource://gre/modules/EventPing.jsm:51:30
-_submitPing@resource://gre/modules/EventPing.jsm:229:12
-shutdown@resource://gre/modules/EventPing.jsm:112:10
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
-shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
-cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
-shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
-shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
-cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
-shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
-shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  TelemetryController: shutting down
-          Phase: profile-before-change-telemetry
-          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-getShutdownState@resource://gre/modules/TelemetrySend.jsm:1687:7
-getShutdownState@resource://gre/modules/TelemetrySend.jsm:369:30
-_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
-setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
-safeGetState@resource://gre/modules/AsyncShutdown.jsm:242:17
-Barrier/addBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:751:20
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
-removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-]]></system-err>
-  </testcase>
-  <testcase name="makeOrderTestPositiveUpperButtonMozilla" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="7.996">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveUpperButtonMozilla(MakeOrderTests.java:83)
-</error>
-    <system-err><![CDATA[1673211139943	geckodriver	INFO	Listening on 127.0.0.1:33802
-1673211139992	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "--remote-debugging-port" "33534" "--remote-allow-hosts" "localhost" "--remote-allow-origins" "http://127.0.0.1:33534/,http://localhost:33534/,http://[::1]:33534/" "-foreground" "-no-remote" "-profile" "/var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileEGaKoI"
-1673211140441	Marionette	INFO	Marionette enabled
-1673211140474	Marionette	INFO	Listening on port 51546
-Read port: 51546
-WebDriver BiDi listening on ws://127.0.0.1:33534
-1673211140814	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/h6/2b6l25ms30q70vcgqffy8hpm0000gn/T/rust_mozprofileEGaKoI/search.json.mozlz4", (void 0)))
-DevTools listening on ws://127.0.0.1:33534/devtools/browser/dae6c0e9-fed1-408d-8d05-6ddb5ac6d949
-1673211147470	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:51606
-1673211147473	CDP	ERROR	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1673211147475	Marionette	INFO	Stopped listening on port 51546
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-sendPing@resource://gre/modules/EventPing.jsm:51:30
-_submitPing@resource://gre/modules/EventPing.jsm:229:12
-shutdown@resource://gre/modules/EventPing.jsm:112:10
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
-shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
-cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
-shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
-shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  Waiting for ping task
-          Phase: TelemetryController: Waiting for pending ping activity
-          State: (none)
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
-promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
-_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
-send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
-submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
-saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:1014:36
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
-cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
-shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
-shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
-_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: A blocker encountered an error while we were waiting.
-          Blocker:  TelemetryController: shutting down
-          Phase: profile-before-change-telemetry
-          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-getShutdownState@resource://gre/modules/TelemetrySend.jsm:1687:7
-getShutdownState@resource://gre/modules/TelemetrySend.jsm:369:30
-_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
-setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
-safeGetState@resource://gre/modules/AsyncShutdown.jsm:242:17
-Barrier/addBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:751:20
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:703:15
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:511:26
-addBlocker@resource://gre/modules/AsyncShutdown.jsm:450:15
-setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1563:28
-@resource://gre/modules/osfile/osfile_async_front.jsm:1583:16
-@resource://gre/modules/osfile.jsm:12:30
-@resource://gre/modules/TelemetryStorage.jsm:19:28
-removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
-removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
-shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
-observe@resource://gre/modules/AsyncShutdown.jsm:560:16
-
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 703: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
-]]></system-err>
-  </testcase>
-  <testcase name="makeOrderTestPositiveLowerButtonChrome" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="5.004">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveLowerButtonChrome(MakeOrderTests.java:53)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 14124
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 08, 2023 11:52:32 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-]]></system-err>
-  </testcase>
-  <testcase name="makeOrderTestPositiveUpperButtonChrome" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="4.771">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveUpperButtonChrome(MakeOrderTests.java:42)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 1386
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-]]></system-err>
-  </testcase>
-  <testcase name="makeOrderTestNegativeLowerButtonChrome" classname="webDriverTest.chromeDriverTest.MakeOrderTests" time="6.036">
-    <error message="&apos;void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
-	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeLowerButtonChrome(MakeOrderTests.java:72)
-</error>
-    <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 44405
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-янв. 08, 2023 11:52:43 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-
-]]></system-err>
-  </testcase>
+  <testcase name="makeOrderUpperButtonParamsTest[2]" classname="webDriverTest.ParamsTest" time="10.007"/>
+  <testcase name="makeOrderLowerButtonParamsTest[2]" classname="webDriverTest.ParamsTest" time="9.36"/>
 </testsuite>

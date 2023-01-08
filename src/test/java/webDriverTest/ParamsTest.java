@@ -1,16 +1,17 @@
 package webDriverTest;
 
-import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.yandex.praktikum.Main;
 
 import static ru.yandex.praktikum.Main.*;
-import static ru.yandex.praktikum.Main.fillRentAboutPage;
+import static ru.yandex.praktikum.OrderForPage.*;
+import static ru.yandex.praktikum.RentAboutPage.*;
 
+//В данном классе представлены два параметризованных теста, на верхнюю и нижнюю кнопку Заказать (makeOrderUpperButtonParamsTest и makeOrderLowerButtonParamsTest)
 @RunWith(Parameterized.class)
-public class ParamsTest {
+public class ParamsTest extends TestBase{
 
     @Parameterized.Parameters
     public static Object[][] data() {
@@ -21,49 +22,42 @@ public class ParamsTest {
         };
     }
 
-    @After
-    public void tearDown() {
-        webDriver.quit();
-    }
-
-    private final Main main;
-    private final String name;
-    private final String surname;
-    private final String address;
-    private final String phoneNumber;
-    private final String comment;
-    private final String date;
+    private final Main MAIN;
+    private final String NAME;
+    private final String SURNAME;
+    private final String ADDRESS;
+    private final String PHONE_NUMBER;
+    private final String COMMENT;
+    private final String DATE;
 
 
         public ParamsTest(String name, String surname, String address, String phoneNumber, String comment, String date) {
-            this.main = new Main();
-            this.name = name;
-            this.surname = surname;
-            this.address = address;
-            this.phoneNumber = phoneNumber;
-            this.comment = comment;
-            this.date = date;
+            this.MAIN = new Main();
+            this.NAME = name;
+            this.SURNAME = surname;
+            this.ADDRESS = address;
+            this.PHONE_NUMBER = phoneNumber;
+            this.COMMENT = comment;
+            this.DATE = date;
         }
 
-        //Параметризованные тесты для Mozilla и Chrome
+        //Параметризованные тесты для верхней и нижней кнопок Заказать
         @Test
-        public void makeOrderParamsTestMozilla() {
-            setUpMozilla();
+        public void makeOrderUpperButtonParamsTest() {
             openSamokat(webDriver);
             clickMakeOrderUpperButton(webDriver);
-            fillOrderPageFields(webDriver, name, surname, address, phoneNumber);
-            fillRentAboutPage(webDriver, comment, date);
+            fillOrderPageFields(webDriver, NAME, SURNAME, ADDRESS, PHONE_NUMBER);
+            fillRentAboutPage(webDriver, COMMENT, DATE);
             orderMadeCheck(webDriver);
         }
 
-        @Test
-        public void makeOrderParamsTestChrome() {
-            setUpChrome();
-            openSamokat(webDriver);
-            clickMakeOrderUpperButton(webDriver);
-            fillOrderPageFields(webDriver, name, surname, address, phoneNumber);
-            fillRentAboutPage(webDriver, comment, date);
-            orderMadeCheck(webDriver);
-        }
+    @Test
+    public void makeOrderLowerButtonParamsTest() {
+        openSamokat(webDriver);
+        clickMakeOrderLowerButton(webDriver);
+        fillOrderPageFields(webDriver, NAME, SURNAME, ADDRESS, PHONE_NUMBER);
+        fillRentAboutPage(webDriver, COMMENT, DATE);
+        orderMadeCheck(webDriver);
+    }
     }
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.chromeDriverTest.ParamsTest" time="0.001" tests="6" errors="6" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="webDriverTest.DropDownTextsTests" time="67.558" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -53,34 +53,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="makeOrderParamsTestMozilla[0]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpMozilla()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
-</error>
-  </testcase>
-  <testcase name="makeOrderParamsTestChrome[0]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpChrome()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
-</error>
-  </testcase>
-  <testcase name="makeOrderParamsTestMozilla[1]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpMozilla()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
-</error>
-  </testcase>
-  <testcase name="makeOrderParamsTestChrome[1]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpChrome()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
-</error>
-  </testcase>
-  <testcase name="makeOrderParamsTestMozilla[2]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpMozilla()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
-</error>
-  </testcase>
-  <testcase name="makeOrderParamsTestChrome[2]" classname="webDriverTest.chromeDriverTest.ParamsTest" time="0">
-    <error message="&apos;void ru.yandex.praktikum.Main.setUpChrome()&apos;" type="java.lang.NoSuchMethodError">java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
-	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
-</error>
-  </testcase>
+  <testcase name="fourthDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="16.082"/>
+  <testcase name="secondDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="7.998"/>
+  <testcase name="seventhDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="6.919"/>
+  <testcase name="fifthDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="7.859"/>
+  <testcase name="sixthDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="7.187"/>
+  <testcase name="firstDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="6.47"/>
+  <testcase name="thirdDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="7.722"/>
+  <testcase name="eighthDropDownTextCheck" classname="webDriverTest.DropDownTextsTests" time="7.321"/>
 </testsuite>

@@ -1,161 +1,69 @@
 package webDriverTest;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.After;
 import org.junit.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import java.util.concurrent.TimeUnit;
 
 import static ru.yandex.praktikum.Main.*;
 
 
-//Тесты текстов кнопок "Вопросы о важном" в браузер Chrome
-public class DropDownTextsTests {
+//Тесты текстов кнопок "Вопросы о важном" в браузерах Chrome и Mozilla
+//Аннотации @before и @After, а так же методы установки браузеров, перенес в класс TestBase, кажется что так код выглядит лучше
+//Итого в данном классе представлено 8 тестов для проверки соответствия текстов 8 кнопок FAQ, с возможностью смены драйвера в @Before
 
-    public void setUpChrome() {
-        WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-    public void setUpMozilla() {
-        System.setProperty("webdriver.gecko.driver", "/Users/artembragin/Documents/geckodriver");
-        webDriver = new FirefoxDriver();
-        webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    }
-
-    @After
-    public void tearDown() {
-        webDriver.quit();
-    }
-
-
+public class DropDownTextsTests extends TestBase{
 
     @Test
-    public void firstDropDownTextCheckChrome() {
-        setUpChrome();
+    public void firstDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFirstButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, firstActualText, firstExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_FIRST_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, firstActualText, FIRST_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void secondDropDownTextCheckChrome() {
-        setUpChrome();
+    public void secondDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSecondButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, secondActualText, secondExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_SECOND_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, secondActualText, SECOND_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void thirdDropDownTextCheckChrome() {
-        setUpChrome();
+    public void thirdDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownThirdButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, thirdActualText, thirdExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_THIRD_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, thirdActualText, THIRD_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void fourthDropDownTextCheckChrome() {
-        setUpChrome();
+    public void fourthDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFourthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, fourthActualText, fourthExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_FOURTH_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, fourthActualText, FOURTH_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void fifthDropDownTextCheckChrome() {
-        setUpChrome();
+    public void fifthDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFifthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, fifthActualText, fifthExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_FIFTH_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, fifthActualText, FIFTH_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void sixthDropDownTextCheckChrome() {
-        setUpChrome();
+    public void sixthDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSixthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, sixthActualText, sixthExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_SIXTH_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, sixthActualText, SIXTH_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void seventhDropDownTextCheckChrome() {
-        setUpChrome();
+    public void seventhDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSeventhButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, seventhActualText, seventhExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_SEVENTH_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, seventhActualText, SEVENTH_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 
     @Test
-    public void eighthDropDownTextCheckChrome() {
-        setUpChrome();
+    public void eighthDropDownTextCheck() {
         openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownEighthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, eighthActualText, eighthExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void firstDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFirstButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, firstActualText, firstExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void secondDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSecondButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, secondActualText, secondExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void thirdDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownThirdButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, thirdActualText, thirdExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void fourthDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFourthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, fourthActualText, fourthExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void fifthDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownFifthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, fifthActualText, fifthExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void sixthDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSixthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, sixthActualText, sixthExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void seventhDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownSeventhButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, seventhActualText, seventhExpectedText);   //Сравнение актуального и ожидаемого текста
-    }
-
-    @Test
-    public void eighthDropTextCheckMozilla() {
-        setUpMozilla();
-        openSamokat(webDriver);    //открытие сайта
-        dropDownButtonClick(webDriver, dropDownEighthButton);   //клик на выпадающий список "Как рассчитывается время аренды?"
-        assertEqual(webDriver, eighthActualText, eighthExpectedText);   //Сравнение актуального и ожидаемого текста
+        dropDownButtonClick(webDriver, DROP_DOWN_EIGHTH_BUTTON);   //клик на выпадающий список "Как рассчитывается время аренды?"
+        assertEqual(webDriver, eighthActualText, EIGHTH_EXPECTED_TEXT);   //Сравнение актуального и ожидаемого текста
     }
 }

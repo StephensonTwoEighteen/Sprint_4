@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: webDriverTest.ParamsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 76.095 s <<< FAILURE! - in webDriverTest.ParamsTest
+makeOrderUpperButtonParamsTest[1](webDriverTest.ParamsTest)  Time elapsed: 17.019 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .//div[contains (text(), "Срок аренды")]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [d507940e-4008-4a10-80a0-40040931b36c, findElement {using=xpath, value=.//div[contains (text(), "Срок аренды")]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:21830, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6223, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:21830/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d507940e-4008-4a10-80a0-40040931b36c
+	at webDriverTest.ParamsTest.makeOrderUpperButtonParamsTest(ParamsTest.java:50)
+
+makeOrderLowerButtonParamsTest[1](webDriverTest.ParamsTest)  Time elapsed: 16.388 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: .//div[contains (text(), "Срок аренды")]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.6', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [442e194d-401d-4e23-827a-f7027a7ae189, findElement {using=xpath, value=.//div[contains (text(), "Срок аренды")]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 108.0.2, moz:accessibilityChecks: false, moz:buildID: 20230104165113, moz:debuggerAddress: 127.0.0.1:18002, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 20.6.0, moz:processID: 6248, moz:profile: /var/folders/h6/2b6l25ms30q..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://127.0.0.1:18002/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 442e194d-401d-4e23-827a-f7027a7ae189
+	at webDriverTest.ParamsTest.makeOrderLowerButtonParamsTest(ParamsTest.java:59)
+
