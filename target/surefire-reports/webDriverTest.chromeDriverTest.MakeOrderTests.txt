@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: webDriverTest.chromeDriverTest.MakeOrderTests
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 46.852 s <<< FAILURE! - in webDriverTest.chromeDriverTest.MakeOrderTests
+makeOrderTestNegativeLowerButtonMozilla(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 6.45 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeLowerButtonMozilla(MakeOrderTests.java:113)
+
+makeOrderTestNegativeUpperButtonMozilla(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 5.187 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeUpperButtonMozilla(MakeOrderTests.java:104)
+
+makeOrderTestNegativeUpperButtonChrome(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 4.966 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeUpperButtonChrome(MakeOrderTests.java:63)
+
+makeOrderTestPositiveLowerButtonMozilla(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 6.441 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveLowerButtonMozilla(MakeOrderTests.java:94)
+
+makeOrderTestPositiveUpperButtonMozilla(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 7.996 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveUpperButtonMozilla(MakeOrderTests.java:83)
+
+makeOrderTestPositiveLowerButtonChrome(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 5.004 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveLowerButtonChrome(MakeOrderTests.java:53)
+
+makeOrderTestPositiveUpperButtonChrome(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 4.771 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestPositiveUpperButtonChrome(MakeOrderTests.java:42)
+
+makeOrderTestNegativeLowerButtonChrome(webDriverTest.chromeDriverTest.MakeOrderTests)  Time elapsed: 6.036 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.fillOrderPageFields(org.openqa.selenium.WebDriver, java.lang.String, java.lang.String, java.lang.String, java.lang.String)'
+	at webDriverTest.chromeDriverTest.MakeOrderTests.makeOrderTestNegativeLowerButtonChrome(MakeOrderTests.java:72)
+

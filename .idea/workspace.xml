@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e4ad2320-efa5-468d-ad40-8429b3bdab5f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/OrderForPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/OrderForPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/RentAboutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/RentAboutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/DropDownTextsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/DropDownTextsTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/MakeOrderTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/MakeOrderTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webDriverTest/ParamsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webDriverTest/ParamsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ru/yandex/praktikum/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/webDriverTest/chromeDriverTest/DropDownTextsTests.class" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2JfpY6Uuho0hSdH7TDm99D5fCxl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/artembragin/yandex/Sprint_4&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.runner&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn test" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.DropDownTextsTests (1)">
+    <configuration name="DropDownTextsTests (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.DropDownTextsTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MakeOrderTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.MakeOrderTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.ParamsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParamsTest.makeOrderLowerButtonParamsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="webDriverTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="webDriverTest" />
+      <option name="MAIN_CLASS_NAME" value="webDriverTest.ParamsTest" />
+      <option name="METHOD_NAME" value="makeOrderLowerButtonParamsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Sprint_4 [test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="test" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sprint_4" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.DropDownTextsTests (1)" />
+      <item itemvalue="JUnit.ParamsTest.makeOrderLowerButtonParamsTest" />
+      <item itemvalue="JUnit.ParamsTest" />
+      <item itemvalue="JUnit.MakeOrderTests" />
+      <item itemvalue="Maven.Sprint_4" />
+      <item itemvalue="Maven.Sprint_4 [test]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DropDownTextsTests (1)" />
+        <item itemvalue="Maven.Sprint_4 [test]" />
+        <item itemvalue="JUnit.ParamsTest" />
+        <item itemvalue="JUnit.ParamsTest.makeOrderLowerButtonParamsTest" />
+        <item itemvalue="JUnit.MakeOrderTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4ad2320-efa5-468d-ad40-8429b3bdab5f" name="Changes" comment="" />
+      <created>1672479037972</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672479037972</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

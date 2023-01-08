@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: webDriverTest.chromeDriverTest.ParamsTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in webDriverTest.chromeDriverTest.ParamsTest
+makeOrderParamsTestMozilla[0](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
+
+makeOrderParamsTestChrome[0](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
+
+makeOrderParamsTestMozilla[1](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
+
+makeOrderParamsTestChrome[1](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
+
+makeOrderParamsTestMozilla[2](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpMozilla()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestMozilla(ParamsTest.java:51)
+
+makeOrderParamsTestChrome[2](webDriverTest.chromeDriverTest.ParamsTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NoSuchMethodError: 'void ru.yandex.praktikum.Main.setUpChrome()'
+	at webDriverTest.chromeDriverTest.ParamsTest.makeOrderParamsTestChrome(ParamsTest.java:61)
+
